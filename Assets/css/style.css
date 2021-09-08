@@ -44,9 +44,9 @@ nav li {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
-
 #straker {
     margin-left: 20px;
+
 }
 
 #logo {
@@ -57,48 +57,62 @@ nav li {
     margin-left: 40px;
 }
 
-
-/* moved up to align better w/html, only anchor tags in the doc */
 a {
     color: #ffffff;
     text-decoration: underline;
 }
 
-
 #about-me {
-    display: flex;
-    margin: 20px;
+    display: inline-flex;
+    flex-direction: row;
     border-right: 3px solid #fff;
-    padding: 50px;
-    height: 150px;
+    padding-right: 50px;
+    height: 200px;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    background-color: white;
+    color: #black;
 }
-/* removed extraneous .header class */
 
-
-/* changed content class to main selector, moved up in order */
-main {
+#banner {
+    height: 100px;
     width: 100%;
-    display: inline-flexbox;
-    margin: 20 20 20 20;
+    margin-bottom: 25px;
+    background-image: url("../images/banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    text-align: right;
+    color: white;
 }
 
-
-/* consolidated header classes into h2 selector */
-.work h2 {
-    display: flex;
-    margin-bottom: 20px;
-    font-size: 26px;
-    text-align: left;
+h2 {
+    font-size: 30px;
 }
+
 
 p {
+    display: inline;
+    flex-wrap: wrap;
     margin-left: 10px;
     font-size: 16px;
 }
 
+.mardock {
+    border-right: solid 3px black;
+    padding-right: 50px;
+    float: left;
+
+}
+
+/* above here is fine */ 
+
+.main {
+    /* Turns this element into a flexbox */
+    display: inline-flexbox;
+    flex-direction: row;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    margin-top: 2%;
+  }
 
 .work {
     display: flex;
@@ -107,118 +121,123 @@ p {
     justify-content: center;
     border-color: black;
     border-spacing: 10px;
-    width: 100%;
     margin-top: 10px;
     padding: 10px;
-    height: 100%;
-    background-color: #0072bb;
+    position: relative;
     color: #ffffff;
 }
 
-.work header {
-    padding: 15px;
-    display: flexbox;
-    flex-direction: row;
-    justify-content: flex-start;
-    background-color: #233946;
-    color: #ffffff;
-    white-space: normal;
+.card1 {
+    /* A flex-basis of 200px sets the starting width */
+    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 200px;
+    padding: 100px;
+    background: url('../images/clicky-clicky!.png');
+    background-size: cover;
+    text-align: center;
+    border: solid 5px black;
+    border-style: solid;
+
 }
 
 .card {
     /* A flex-basis of 200px sets the starting width */
     /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+    display: flex;
+    flex-direction: column;
     flex: 1 0 200px;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;  
-    margin: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 100px;
+    background: url('../images/background.jpeg');
+    background-size: cover;
+    position: relative;
+    border: solid 5px black;
+    border-spacing: 10px;
 }
 
-.card a {
-    /* A flex-basis of 200px sets the starting width */
-    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-    flex: 1 0 200px;
-    padding: 10px;
-    text-align: bottom;
-    border-style: solid;
-    border-width: 1px; 
-    color:aqua;   
+.card header {
+    display: inline;
+    position: absolute;
+    left: 0px;
+    bottom: 8px;
+    padding: 20px;
+    background: #13293d;
+    color: #fff;
+
 }
 
+.card header {
+    display: flex;
+    text-align: left;
+    position: absolute;
+    bottom: 8px;
+    height: 80px;
+    width: 40%;
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+    background: black
+    background-repeat: no-repeat;
+}
 
-  .card img {
-    opacity: 50%;
-    max-height: 100%;
-    max-width: 100%;
+.card:hover {
+    font-size: 200%;
+    box-shadow: 0 0 10px #000 inset;
+
+}
+
+.card:active {
+    box-shadow: 0 0 50px #000 inset;
+
 }
 
 /*consolidated classes into ids, combined b/c the characteristics are the same, and moved up in order */
-#contact-me, #resume {   
+#contact-me {   
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex;
+    flex-wrap: wrap;
+    align-items: left;
     margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    color:black;
     border-right-color: black;
 }
 
-#resume a {
-    color:black;
-
-}
-
-#contact-me li {
+#contact-me li, #contact-me a {
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 15px;
     list-style-type: none;
     font-size: 18px;
     text-align: right;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     text-decoration: underline;
+    color: black
 }
 
-/* consolidated image ids */
-#work img, #contact-me img, #resume img {
-    max-height: 200px;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-
-/* changed font size to 16px */
-h3 {
-    margin-bottom: 20px;
-    font-size: 16px;
-}
-
-
-@media only screen and (max-width: 600px) {
-    body {
+@media screen and (max-width: 600px) {
+    * {
         display: flex;
-        flex: 1 0 100px;
+        flex: .5 0 100px;
         text-overflow: ellipsis;
         background-color: lightblue;
 
     }
     
   }
+
+  /*added after sent to clyde */ 
+
+
+  
+  /* Large smartphones - navbar changes color */
+  @media screen and (max-width: 768px) {
+    *, .work {
+        flex-direction: column;
+        font-size: 50%;
+    }
+  }
+  

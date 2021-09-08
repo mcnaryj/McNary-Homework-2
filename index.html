@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Jack McNary's Portfolio</title>
 </head>
@@ -28,51 +29,50 @@
             </ul>
         </nav>
     </header>
-    <section id="straker"><img id="logo" src="Assets/images/Straker Logo.png" alt="straker logo"/> <img src="Assets/images/headshot.jpeg" alt="headshot"/> <img id="skobuffs" src="Assets/images/buffalo!.png" alt="sko buffs"</></section>
+    <section id="banner">
+        Coder in training
+    </section>
     <section id="about-me">
-        <h2>About Me</h2>
+        <h2 class="mardock">About Me</h2>
         <p>
             My name is Jack McNary, and I am in training for a full-stack certicate course to complement the skills I use in my current work, with the aim of expanding into different areas.
-        </p>
+            I thought about including some work I have done in my job, but obviously that would not be applicable if I were interviewing for a full-stack oriented job. 
+      
+            <br><br>Therefore, it will be fun to fill this out as I go, and to actually figure out what the heck is going on with some of these scenarios. Let me see if I can just get like, anything to work here first</p>
     </section>
-    <main id="work">
-        <section class="work">
-            <img src="" alt="" class="float-right" />
-            <h2>Work</h2>
-            <p>You may find as follows the projects that I have managed to complete. As you will see, there is one. I will plan on filling out the rest as we progress in the class.</p>
-        <div class="work">
-            <section class="card">
+    <main class="main">
+        <section>
+            <h2 class="mardock">Work</h2>
+        <container class="work">
+            <section class="card1">
               <header><a href="https://scratch.mit.edu/projects/559095835" target="_blank">Clicky Clicky!</a>
-                <p>This was my first attempt at making a game with Scratch Studios. It's rather rushed, but I like it's quirky charm, as it reminds me of playing games on ebaumsworld as a kid.</p>
             </header>
-              <img src="Assets/images/clicky-clicky!.png" alt="camera"/>
             </section>
         </div>
         <div class="work">
             <section class="card">
                 <header>Application Placeholder #2</header>
-                <img src="./assets/images/background.jpeg" alt="spongebob flipping burgers!" />
             </section>
             <section class="card">
               <header>Application Placeholder #3</header>
-              <img src="./assets/images/background.jpeg" alt="spongebob flipping burgers!" />
             </section>
         </div>
         <div class="work">
             <section class="card">
                 <header>Application Placeholder #4</header>
-                <img src="./assets/images/background.jpeg" alt="spongebob flipping burgers!" />
             </section>
             <section class="card">
               <header>Application Placeholder #5</header>
-              <img src="./assets/images/background.jpeg" alt="spongebob flipping burgers!" />
             </section>
-          </div>
         </div>
+        </container>
     </section>
 
+
+
+
         <section id="contact-me">
-            <h2>Contact Me:</h2>
+            <h2 class="mardock">Contact Me:</h2>
                 <li>
                     <a href="#phone-number">303-514-6087</a>
                 </li>
@@ -83,18 +83,11 @@
                     <a href="https://github.com/mcnaryj">Github</a>
                 </li>
                 <li>
-                    <a href="#resume">Resume</a>
+                    <a id="dresume" href="Assets/images/Jack_McNary_resume.pdf">Resume</a>
                 </li>
             </ul>            
         </section>
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>Please find a link to my (old) resume <a href="Assets/images/Jack_McNary_resume.pdf" target="_blank">here.</a>
-            I should probably update this thing!</p>
-        </section>
-        
-    </main>
-
+</main>
 </body>
 
 </html>
