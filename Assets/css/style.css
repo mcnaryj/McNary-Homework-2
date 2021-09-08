@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #233946;
+    color: #ffffff;
+    white-space: normal;
+}
+
+h1 {
+    justify-content: flex-start;
+    font-size: 48px;
+    margin-left: 10px;
+    margin-right: 210px;
+}
+
+header nav {
+    padding: 15px;
+    display: flex;
+    flex: 1 0 200px;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #233946;
+    color: #ffffff;
+    white-space: normal;
+}
+
+/* added class for the nav bar, used li selector, tweaked margins, changed font size to 18px */
+nav li {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 30px;
+    padding-top: 15px;
+    list-style-type: none;
+    font-size: 18px;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/* moved up to align better w/html, only anchor tags in the doc */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+#about-me {
+    display: flex;
+    margin: 20px;
+    border-right: 3px solid #fff;
+    padding: 50px;
+    height: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+#about-me p {
+    margin-left: 20px;
+}
+/* removed extraneous .header class */
+
+
+/* changed content class to main selector, moved up in order */
+main {
+    width: 100%;
+    display: inline-flexbox;
+    margin-left: 20px;
+}
+
+
+/* consolidated header classes into h2 selector */
+h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-align: left;
+}
+
+p {
+    font-size: 16px;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-color: black;
+    border-spacing: 10px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    height: 100%;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.card {
+    /* A flex-basis of 200px sets the starting width */
+    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+    flex: 1 0 200px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;  
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card a {
+    /* A flex-basis of 200px sets the starting width */
+    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: bottom;
+    border-style: solid;
+    border-width: 1px; 
+    color:aqua;   
+}
+
+
+  .card img {
+    opacity: 50%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/*consolidated classes into ids, combined b/c the characteristics are the same, and moved up in order */
+#contact-me, #resume {   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex;
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+
+#contact-me li {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 15px;
+    margin-right: 30px;
+    padding-top: 15px;
+    list-style-type: none;
+    font-size: 18px;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/* consolidated image ids */
+#work img, #contact-me img, #resume img {
+    max-height: 200px;
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+
+/* changed font size to 16px */
+h3 {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex: 1 0 100px;
+        text-overflow: ellipsis;
+        background-color: lightblue;
+
+    }
+    
+  }
