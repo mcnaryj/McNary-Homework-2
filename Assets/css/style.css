@@ -104,13 +104,10 @@ p {
 
 }
 
-/* above here is fine */ 
 
 .main {
-    /* Turns this element into a flexbox */
     display: inline-flexbox;
     flex-direction: row;
-    /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
     margin-top: 2%;
   }
@@ -133,8 +130,6 @@ p {
     height: 0;
   }
 .card1 {
-    /* A flex-basis of 200px sets the starting width */
-    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
     display: block;
     flex-direction: column;
     padding: 300px;
@@ -147,8 +142,6 @@ p {
 }
 
 .card {
-    /* A flex-basis of 200px sets the starting width */
-    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -197,7 +190,6 @@ p {
 
 }
 
-/*consolidated classes into ids, combined b/c the characteristics are the same, and moved up in order */
 #contact-me {   
     display: flex;
     flex-direction: row;
@@ -226,7 +218,6 @@ p {
 
   }
 
-  /*added after sent to clyde */ 
 
 
   
