@@ -12,7 +12,6 @@ With that being stated, the homework as it is being submitted is incomplete, and
 
 An employer would like to view a sample portfolio for a prospective interviewee, so they can assess the candidate's eligibility for a position.
 Thus far, mine would indicate the answer is "no".
-```
 
 
 ## Acceptance Criteria
